@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vending Machine</title>
+</head>
+<body style="background-color:powderblue;">
+    <h1>Welcome to the Vending Machine</h1>
+    <h2>Please insert coins</h2>
+
+    <form>
+        <span>R0.50</span> <input type="text" name="R0.50" id="R0.50" placeholder="0" value="0" oninput="getT()"><br>
+        <span>R1</span> <input type="text" name="R1" id="R1" placeholder="0" value="0" oninput="getT()" ><br>
+        <span>R2</span> <input type="text" name="R2" id="R2" placeholder="0" value="0" oninput="getT()"><br>
+        <span>R5</span> <input type="text" name="R5" id="R5" placeholder="0" value="0" oninput="getT()" >
+    </form><br>
+    <button value="Refresh"  id="Refresh" onclick="refresh()">Refresh</button><br><br>
+    <h2>Now Select drink</h2>
+    <button value="Coke"  id="Coke" onclick="Dispense(0)" >Coke</button><input type="text" id="R9.50" name="R9.50" value="R9.50" maxlength="2" size="2">
+    <button value="Play"  id="Play" onclick="Dispense(1)">Play</button><input type="text" id="R9.50" name="R9.50" value="R9.50" maxlength="2" size="2">
+    <button value="Sprite"  id="Sprite" onclick="Dispense(2)" >Sprite</button><input type="text" id="R9.50" name="R9.50" value="R9.50" maxlength="2" size="2">
+    <button value="RedBull"  id="RedBull" onclick="Dispense(3)" >RedBull</button><input type="text" id="R9.50" name="R9.50" value="R9.50" maxlength="2" size="2"><br><br>
+
+    
+    <h3 id="message">Select a drink and insert coins.</h3>
+    <h3>Total coins inserted: R <span id="Paid">0.00 </span</h3>
+    
+    
+    
+    
+    <script src="vend.js" ></script>
+</body>
+</html>
